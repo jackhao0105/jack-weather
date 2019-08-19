@@ -9,15 +9,15 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>	
 <body>
-	<h1 class="text-center">Jack wanna know <span class="text-success">Weather</span></h1>
 	<div class="container">
 
 		<!-- Column show the Temperate Value -->
-		<div class="row">
+		<div class="row header">
 			<div class="weather-container col-md-4">
-				<div class="weather-icon text-center"></div>
+				<div class="weather-icon text-center display-4"></div>
 				<div class="temperate-value display-4 text-center"><p></p></div>
 				<div class="temperate-description text-center"><p></p></div>
 				
@@ -29,7 +29,7 @@
 			</div>
 
 			<!-- Empty Column -->
-			<div class="col-md-4"></div>
+			<div class="note col-md-4"></div>
 
 			<!-- Location & Day Column -->
 			<div class="col-md-4 py-5">
@@ -39,7 +39,7 @@
     			</div>
 
 				<div class="location display-4"></div>
-				<div class="date"></div>
+				<h3 class="date text-dark"></h3>
 			</div>
 
 		</div>
