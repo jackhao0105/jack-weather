@@ -12,34 +12,44 @@
 	<link rel="stylesheet" href="style.css">
 </head>	
 <body>
-	<div class="container">
+	<div class="container d-flex rounded-lg">	
 
-		<!-- Column show the Temperate Value -->
-		<div class="row header">
-			<div class="weather-container col-md-4">
-				<div class="weather-icon text-center display-4"></div>
-				<div class="temperate-value display-4 text-center"><p></p></div>
-				<div class="temperate-description text-center"><p></p></div>
-				
-				<div class="infor row">
-					<div class="humidity text-center col-md-5 col-sm-5"></div>
-					<div class="text col-md-2 col-sm-2"><h3>Weather at <span class="text-success">here</span></h3></div>
-					<div class="wind text-center col-md-5 col-sm-5"></div>
-				</div>
+		<!-- Picture Column -->
+		<div class="row flex-fill header">
+			<div class="col-md-4 d-flex align-items-center note" id="picture">
+				<div class="d-flex flex-column introduce">
+					<h1 class="title text-center">Jackie's Weather</h1>
+					<h2 class="description text-center">Find out the temperate, weather and more...</h2>
+				</div> 
 			</div>
 
-			<!-- Empty Column -->
-			<div class="note col-md-4"></div>
+			
 
-			<!-- Location & Day Column -->
-			<div class="col-md-4 py-5">
-				<div class="form-inline my-2 my-lg-0">
-      				<input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    			</div>
+			<!-- Weather Column -->
+			<div class="col-md-8 py-5">
+				<!--Location & Day -->
+				<div class="board-container d-flex flex-column text-center">
+					<div class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+							<input id="searchInput" class="form-search mr-sm-3" type="search" placeholder="Enter City Name" aria-label="Search">
+							<button class="btn btn-warning my-1 my-sm-0" type="submit">Search</button>
+					</div>
 
-				<div class="location display-4"></div>
-				<h3 class="date text-dark"></h3>
+					<div class="location display-4"></div>
+					<h3 class="date text-dark"></h3>
+				</div>
+				
+				<!-- Column show the Temperate Value -->
+				<div class="weather-container">
+						<div class="weather-icon text-center display-4"></div>
+						<div class="temperate-value display-4 text-center"><p></p></div>
+						<div class="temperate-description text-center"><p></p></div>
+						
+						<div class="infor row">
+							<div class="humidity text-center col-md-5 col-sm-5"></div>
+							<div class="text col-md-2 col-sm-2"></div>
+							<div class="wind text-center col-md-5 col-sm-5"></div>
+						</div>
+					</div>
 			</div>
 
 		</div>
